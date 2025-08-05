@@ -17,7 +17,8 @@ RUN sh -c "$(curl -L https://github.com/deluan/zsh-in-docker/releases/download/v
     -p "https://github.com/zsh-users/zsh-autosuggestions" \
     -p "https://github.com/zsh-users/zsh-syntax-highlighting"
 
-LABEL org.opencontainers.image.authors="hollanbm@gmail.com" \
-      org.opencontainers.image.source=https://github.com/hollanbm/docker-ffmpeg
+LABEL org.opencontainers.image.authors="hollanbm@gmail.com"
+LABEL org.opencontainers.image.source=https://github.com/hollanbm/docker-ffmpeg-mediainfo
+LABEL org.opencontainers.image.description README.md
 
 RUN chsh -s /bin/zsh root
