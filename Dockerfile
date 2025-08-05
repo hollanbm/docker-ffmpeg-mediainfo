@@ -1,5 +1,6 @@
+ARG FFMPEG_VERSION=7.1
 ARG FFMPEG_TAG=nvidia
-FROM ghcr.io/jrottenberg/ffmpeg:7.1-${FFMPEG_TAG}
+FROM ghcr.io/jrottenberg/ffmpeg:${FFMPEG_VERSION}-${FFMPEG_TAG}
 
 ENV DEBIAN_FRONTEND=nonintercative
 
