@@ -5,7 +5,7 @@ FROM ghcr.io/jrottenberg/ffmpeg:${FFMPEG_VERSION}-${FFMPEG_TAG}
 ENV DEBIAN_FRONTEND=nonintercative
 
 RUN apt-get -yqq update && \
-    apt-get install -y git zsh mediainfo curl nano && \
+    apt-get install -y git zsh mediainfo curl nano unrar unzip && \
     apt-get autoremove -y && \
     apt-get clean -y
 
