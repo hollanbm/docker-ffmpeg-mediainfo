@@ -9,7 +9,8 @@ RUN apt-get -yqq update && \
     apt-get autoremove -y && \
     apt-get clean -y
 
-WORKDIR /root/
+RUN chsh -s /bin/zsh ubuntu
+USER ubuntu
 
 RUN sh -c "$(curl -L https://github.com/deluan/zsh-in-docker/releases/download/v1.2.1/zsh-in-docker.sh)" -- \
     -t "robbyrussell" \
@@ -21,4 +22,4 @@ LABEL org.opencontainers.image.authors="hollanbm@gmail.com"
 LABEL org.opencontainers.image.source=https://github.com/hollanbm/docker-ffmpeg-mediainfo
 LABEL org.opencontainers.image.description README.md
 
-RUN chsh -s /bin/zsh root
+ENTRYPOINT [ "/bin/zsh" ]
