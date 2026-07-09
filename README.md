@@ -14,3 +14,4 @@ Based on [ffmpeg](https://github.com/jrottenberg/ffmpeg) image created by @jrott
   * curl
   * nano
   * jq
+  * locales
