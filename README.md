@@ -13,3 +13,4 @@ Based on [ffmpeg](https://github.com/jrottenberg/ffmpeg) image created by @jrott
     * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
   * curl
   * nano
+  * jq
