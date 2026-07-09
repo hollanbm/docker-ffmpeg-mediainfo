@@ -1,0 +1,148 @@
+x-build-base: &build-base
+  context: .
+  dockerfile: Dockerfile
+
+services:
+  ffmpeg-7-nvidia:
+    image: docker-ffmpeg-mediainfo:7-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-7-ubuntu:
+    image: docker-ffmpeg-mediainfo:7-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-7-vaapi:
+    image: docker-ffmpeg-mediainfo:7-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7"
+        FFMPEG_TAG: vaapi
+
+  ffmpeg-7-0-nvidia:
+    image: docker-ffmpeg-mediainfo:7.0-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.0"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-7-0-ubuntu:
+    image: docker-ffmpeg-mediainfo:7.0-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.0"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-7-0-vaapi:
+    image: docker-ffmpeg-mediainfo:7.0-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.0"
+        FFMPEG_TAG: vaapi
+
+  ffmpeg-7-1-nvidia:
+    image: docker-ffmpeg-mediainfo:7.1-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.1"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-7-1-ubuntu:
+    image: docker-ffmpeg-mediainfo:7.1-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.1"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-7-1-vaapi:
+    image: docker-ffmpeg-mediainfo:7.1-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "7.1"
+        FFMPEG_TAG: vaapi
+
+  ffmpeg-8-nvidia:
+    image: docker-ffmpeg-mediainfo:8-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-8-ubuntu:
+    image: docker-ffmpeg-mediainfo:8-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-8-vaapi:
+    image: docker-ffmpeg-mediainfo:8-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8"
+        FFMPEG_TAG: vaapi
+
+  ffmpeg-8-0-nvidia:
+    image: docker-ffmpeg-mediainfo:8.0-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.0"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-8-0-ubuntu:
+    image: docker-ffmpeg-mediainfo:8.0-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.0"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-8-0-vaapi:
+    image: docker-ffmpeg-mediainfo:8.0-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.0"
+        FFMPEG_TAG: vaapi
+
+  ffmpeg-8-1-nvidia:
+    image: docker-ffmpeg-mediainfo:8.1-nvidia
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.1"
+        FFMPEG_TAG: nvidia
+
+  ffmpeg-8-1-ubuntu:
+    image: docker-ffmpeg-mediainfo:8.1-ubuntu
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.1"
+        FFMPEG_TAG: ubuntu
+
+  ffmpeg-8-1-vaapi:
+    image: docker-ffmpeg-mediainfo:8.1-vaapi
+    build:
+      <<: *build-base
+      args:
+        FFMPEG_VERSION: "8.1"
+        FFMPEG_TAG: vaapi
