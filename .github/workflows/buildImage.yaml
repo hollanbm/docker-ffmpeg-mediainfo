@@ -26,11 +26,9 @@ jobs:
           - "7.1"
           - "8"
           - "8.0"
-          - "8.1"
         ffmpeg_tag:
           - nvidia
           - ubuntu
-          - vaapi
     steps:
       - name: Checkout repository
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
