@@ -66,19 +66,3 @@ services:
       args:
         FFMPEG_VERSION: "8"
         FFMPEG_TAG: ubuntu
-
-  ffmpeg-8-0-nvidia:
-    image: docker-ffmpeg-mediainfo:8.0-nvidia
-    build:
-      <<: *build-base
-      args:
-        FFMPEG_VERSION: "8.0"
-        FFMPEG_TAG: nvidia
-
-  ffmpeg-8-0-ubuntu:
-    image: docker-ffmpeg-mediainfo:8.0-ubuntu
-    build:
-      <<: *build-base
-      args:
-        FFMPEG_VERSION: "8.0"
-        FFMPEG_TAG: ubuntu

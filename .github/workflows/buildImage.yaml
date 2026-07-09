@@ -19,13 +19,13 @@ jobs:
       contents: read
       packages: write
     strategy:
+      fail-fast: false
       matrix:
         ffmpeg_version:
           - "7"
           - "7.0"
           - "7.1"
           - "8"
-          - "8.0"
         ffmpeg_tag:
           - nvidia
           - ubuntu
